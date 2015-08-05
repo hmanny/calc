@@ -1,56 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <title>Fulfillment Calculator</title>
+    <link href="/nouislider.css" rel="stylesheet"></link>
+    <link href="/css/styles.css" rel="stylesheet"></link>
+
+    <script src="/nouislider.js"></script>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <link href="/stylesheets/screen.css" rel="stylesheet" type="text/css" />
-    <title></title>
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="top-menu">
-            <ul class="menu" id="main">
-                <li id="menu0"><a title="Home" href="#">Home</a></li>
-                <li id="menu1" class="nodiv"><a title="About us" href="#">About us</a>
-                    <ul>
-                        <li><a title="Our team" href="#">Our team</a></li>
-                        <li><a title="Our process" href="#">Our process</a></li>
-                        <li><a title="Our location" href="#">Our location</a></li>
-                        <li><a title="Our history" href="#">Our history</a></li>
-                    </ul>
-                </li>
-                <li id="menu2" class="nodiv liLinkActive"><a title="Services" href="#" class="linkActive">Services</a></li>
-                <li id="menu3" class="nodiv"><a title="Gallery" href="#">Gallery</a></li>
-                <li id="menu4" class="nodiv"><a title="Contact" href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main></main>
-    <footer>
-        <nav class="mobile-menu">
-            <ul class="menu" id="main">
-                <li id="menu0"><a title="Home" href="#">Home</a></li>
-                <li id="menu1" class="nodiv"><a title="About us" href="#">About us</a>
-                    <ul>
-                        <li><a title="Our team" href="#">Our team</a></li>
-                        <li><a title="Our process" href="#">Our process</a></li>
-                        <li><a title="Our location" href="#">Our location</a></li>
-                        <li><a title="Our history" href="#">Our history</a></li>
-                    </ul>
-                </li>
-                <li id="menu2" class="nodiv liLinkActive"><a title="Services" href="#" class="linkActive">Services</a></li>
-                <li id="menu3" class="nodiv"><a title="Gallery" href="#">Gallery</a></li>
-                <li id="menu4" class="nodiv"><a title="Contact" href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="menu_button"></button>
+    <div class="calculator-wrap">
+        <h2>Order Fulfilment and Storage Cost Calculator</h2>
+        <div class="calc-section">
+            <div class="section-header">
+                <h2>Orders Fulfilled</h2>
+            </div>
+            <div class="slider-half-width">
+                <h3>How many orders are you fulfilling per month?</h3>
+                <div class="slider" id="slider1"></div>
+            </div>
+            <div class="slider-half-width">
+                <h3>What's your averge number of items picked per order?</h3>
+                <div class="slider" id="slider2"></div>
+            </div>
+            <div class="directions">
+                <div>Next Step: Please use the calculator below to enter your storage requirements</div>
+            </div>
+        </div>
+        <div class="calc-section">
+            <div class="section-header">
+                <h2>Storage</h2>
+            </div>
+            <div class="slider-half-width">
+                <h3>How much space do you require?</h3>
+                <div class="slider" id="slider3"></div>
+            </div>
+            <div class="slider-half-width">
+                <h3>How many unique products (SKUs) do you sell?</h3>
+                <div class="slider" id="slider4"></div>
+            </div>
+        </div>
+    </div>
 
-        Web Design by The Smarter Web Company
-    </footer>
-    <script src="/js/jquery-1.11.3.min.js"></script>
-    <script src="/js/mobile-menu.js"></script>
+    <script>
+        var tooltipSlider = document.getElementById('slider1');
+
+        noUiSlider.create(tooltipSlider, {
+            start: [40],
+            range: {
+                'min': 0,
+                'max': 100
+            }
+        });
+        var tooltipSlider = document.getElementById('slider2');
+
+        noUiSlider.create(tooltipSlider, {
+            start: [40],
+            range: {
+                'min': 0,
+                'max': 100
+            }
+        });
+        var tooltipSlider = document.getElementById('slider3');
+
+        noUiSlider.create(tooltipSlider, {
+            start: [40],
+            range: {
+                'min': 0,
+                'max': 100
+            }
+        });
+        var tooltipSlider = document.getElementById('slider4');
+
+        noUiSlider.create(tooltipSlider, {
+            start: [40],
+            range: {
+                'min': 0,
+                'max': 100
+            }
+        });
+
+    </script>
+
+
+
 </body>
 
 </html>

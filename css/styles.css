@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+.calculator-wrap {
+    max-width: 937px;
+    margin: 0 auto;
+}
+.calculator-wrap .section-header {
+    text-align: left;
+    color: white;
+    background: linear-gradient(#a2806a, #7f5d47);
+    font-size: 18px;
+    margin: 0;
+    padding: 12px 20px;
+}
+.calculator-wrap .section-header h2 {
+    margin: 0;
+}
+.calculator-wrap .calc-section {
+    border: 1px solid #7f5d47;
+    padding: 0;
+    margin-bottom: 45px;
+}
+.calculator-wrap .slider-half-width {
+    display: inline-block;
+    width: 49%;
+}
+.calculator-wrap .calc-section .slider-half-width h3 {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: normal;
+    max-width: 50%;
+    margin: 20px auto;
+}
+.calculator-wrap .directions {
+    width: 80%;
+    margin: 20px auto;
+    padding: 25px 5px;
+    color: white;
+    background: #a2806a;
+    font-size: 18px;
+    border: 1px solid #7f5d47;
+}
+.slider {
+    margin: 60px auto;
+    width: 75%;
+}
+.slider .noUi-base {
+    background-color: #d27821;
+    border-radius: 10px;
+}
+.noUi-target {
+    border-radius: 10px;
+}
+.slider .noUi-handle {
+    background-color: #f4f4f4;
+}
+.tooltip {
+    display: block;
+    position: absolute;
+    border: 1px solid #D9D9D9;
+    font: 400 12px/12px Arial;
+    border-radius: 3px;
+    background: #fff;
+    top: -43px;
+    padding: 5px;
+    left: -9px;
+    text-align: center;
+    width: 50px;
+}
+.tooltip strong {
+    display: block;
+    padding: 2px;
+}
